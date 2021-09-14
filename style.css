@@ -1,0 +1,61 @@
+/* Efecto compuesto bad way */
+
+div, div.bw-container {
+    border: dashed 1px black;
+    padding: 20px;
+    font-size: 10px;
+}
+
+.bw-container p {
+    font-size: 20px;
+}
+
+.bw-container p span {
+    font-size: 20px;
+}
+
+.bw-container button {
+    background-color: white;
+    border: solid black;
+    padding: 15px 30px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+/* Efecto compuesto */
+
+html {
+    font-size: 62.5%;
+} 
+
+div, div.ec-container {
+    border: dashed 1px black;
+    padding: 2em;
+    font-size: 1rem;
+}
+
+.ec-container p {
+    font-size: 2em;
+}
+
+.ec-container p span {
+    font-size: 1em;
+}
+
+.ec-container button {
+    background-color: white;
+    border: solid black;
+    padding: 1em 2em;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 600px) {
+
+    div, div.ec-container {
+        font-size: 0.8rem;
+    }
+    
+}
